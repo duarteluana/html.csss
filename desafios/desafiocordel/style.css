@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    font-family: Passion One, Cursive;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+
+.primeira {
+    background-position: left;
+    background-color: white;
+}
+
+.segunda {
+    background-image: url(imagens/background001.jpg);
+    background-repeat: no repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right center;
+    color: white;
+}

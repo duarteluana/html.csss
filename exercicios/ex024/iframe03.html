@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid blue;
+            background-image: url(https://upload.wikimedia.org/wikipedia/pt/0/02/Homer_Simpson_2006.png);
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos repellendus magni reiciendis architecto quia obcaecati maxime vel odio libero alias? Ipsum quidem, ad voluptates error tenetur quo dicta dolorum veritatis!</p>
+    <ul>
+        <li><a href="paginasextras/pag001.html" target="frame">Primeira pagina</a></li>
+        <li><a href="paginasextras/pag002.html" target="frame">Segunda pagina</a></li>
+        <li><a href="paginasextras/pag003.html" target="frame">Terceira pagina</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cumque repellendus, hic maiores rem nulla voluptatibus voluptatem sunt mollitia nemo perferendis rerum facere consectetur fuga quibusdam, error odio ad! Dolorem.</p>
+
+    <iframe src="" name="frame" srcdoc="<h1>Escolha uma das opções acima.</h1>">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum neque deserunt illo eum distinctio magni voluptatum nulla autem numquam recusandae, voluptates molestiae repudiandae sed ab mollitia consectetur veritatis beatae nisi!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium numquam magni ipsam eum, quasi ratione, quibusdam quae et ipsum tenetur exercitationem voluptate obcaecati perspiciatis esse consequuntur saepe, libero aut quam.</p>
+</body>
+</html>

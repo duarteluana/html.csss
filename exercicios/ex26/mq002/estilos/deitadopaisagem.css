@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: left bottom;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

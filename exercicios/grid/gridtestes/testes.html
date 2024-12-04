@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de Grid</title>
+    <style>
+        .pai {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, minmax(100px, auto));
+            gap: 1rem;
+
+           
+        }
+
+        .filho:nth-child(1){
+            background-color: rgba(255, 99, 71, 0.685);
+            grid-column: 1 / -1;
+            text-align: center;
+            font-size: 100px;
+            height: 300px;
+        }
+
+        .filho:nth-child(2) {
+            background-color: rgba(15, 123, 237, 0.682);
+            grid-column: 1;
+        }
+
+        .filho:nth-child(3) {
+            background-color: rgba(233, 181, 117, 0.563);
+            grid-column: 2 / 5;
+            height: 300px;
+        }
+
+        .filho:nth-child(4) {
+            background-color: rgba(15, 123, 237, 0.682);
+            grid-column: 5;
+        }
+
+        .filho:nth-child(5) {
+            background-color: rgba(15, 122, 237, 0.271);
+            grid-column: 1 / -1;
+            font-style: italic;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            font-size: 60px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filho">Esse é o meu cabeçalho</div>
+        <div class="filho">2secão essa é uma pequena parte do conteudo que vai ficar como uma seção ao lado esquerdo</div>
+        <div class="filho"><p style="font-family: Georgia, 'Times New Roman', Times, serif;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsam laborum, voluptatibus atque nesciunt consectetur. Qui fugit illo, debitis esse dolorem dolor maiores minima cupiditate incidunt, totam autem maxime quis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsam laborum, voluptatibus atque nesciunt consectetur. Qui fugit illo, debitis esse dolorem dolor maiores minima cupiditate incidunt, totam autem maxime quis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsam laborum, voluptatibus atque nesciunt consectetur. Qui fugit illo, debitis esse dolorem dolor maiores minima cupiditate incidunt, totam autem maxime quis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita ipsam laborum, voluptatibus atque nesciunt consectetur. Qui fugit illo, debitis esse dolorem dolor maiores minima cupiditate incidunt, totam autem maxime quis.</p>
+        </div>
+        <div class="filho">4secao que vai ficar na parte da direita do meu site</div>
+        <div class="filho">5footer</div>
+    </div>
+</body>
+</html>

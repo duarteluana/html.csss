@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitezinho</title>
+    <style>
+        .wrapper {
+             display: grid;
+             gap: .5rem;
+
+             grid-template-areas: 
+               "cabecalho"
+               "principal"
+               "sidebar"
+               "asidemain"
+               "asidesecundario"
+               "footer"
+             ;
+             grid-template-columns: 1fr;
+             height: 100vh;
+             margin: 0 auto;
+             max-width: 1200px;
+
+             @media (min-width: 48em) {
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: .5fr 2fr .5fr .5fr;
+                grid-template-areas: 
+                   "cabecalho cabecalho cabecalho cabecalho cabecalho cabecalho"
+                   ". principal principal principal sidebar  . "
+                   " . asidemain asidemain asidesecundario asidesecundario . "
+                   "footer footer footer footer footer footer"
+                ;
+             }
+        }
+
+        .cabecalho {
+            background-color: aqua;
+            grid-area: cabecalho;
+        }
+        .principal {
+            background-color: rgba(72, 0, 255, 0.893);
+            grid-area: principal;
+        }
+        .sidebar {
+            background-color: rgba(255, 111, 0, 0.827);
+            grid-area: sidebar;
+        }
+        .asidemain {
+            background-color: rgba(0, 255, 81, 0.718);
+            grid-area: asidemain;
+        }
+        .asidesecundario {
+            background-color: rgba(255, 68, 0, 0.822);
+            grid-area: asidesecundario;
+        }
+        .footer {
+            background-color: rgb(6, 204, 125);
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="cabecalho">a</header>
+        <main class="principal">b</main>
+        <aside class="sidebar">c</aside>
+        <aside class="asidemain">d</aside>
+        <aside class="asidesecundario">e</aside>
+        <footer class="footer">f</footer>
+    </div>
+</body>
+</html>

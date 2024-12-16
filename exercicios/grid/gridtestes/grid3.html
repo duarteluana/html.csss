@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridArea</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 250px;
+            gap: .5rem;
+           
+           grid-template-areas: 
+           "header header header header"
+           " main main main aside"
+           " footer footer footer aside";
+        }
+
+
+        .wrapper > *:nth-child(even) {
+            background-color: rgba(21, 11, 220, 0.833);
+            
+        }
+        .wrapper > *:nth-child(odd) {
+            background-color: rgba(21, 11, 220, 0.51);
+           
+        }
+
+        header {
+            grid-area: header;
+        }
+        main {
+            grid-area: main;
+        }
+        aside {
+            grid-area: aside;
+        }
+        footer {
+            grid-area: footer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+       <header>header</header>
+       <main>main</main>
+       <aside>aside</aside>
+       <footer>footer</footer>
+    </div>
+</body>
+</html>
